@@ -1,9 +1,26 @@
 # Experiment 7 – Functional Dependencies and Normalization
 
-**Aim:** Identify functional dependencies in a denormalized Sales relation and normalize it from 1NF to 3NF and BCNF. Verify lossless join and dependency preservation.
+## Aim
+Given a denormalized Sales table, identify functional dependencies and normalize step by step from UNF to 3NF and BCNF.
 
-**Relations in the final design:** `Customer`, `Salesperson`, `Product`, `SalesOrder`, `SalesItem`.
+## Required tasks
+- Identify functional dependencies.
+- Normalize the relation from UNF to 1NF, 2NF and 3NF.
+- Decompose further to BCNF where required.
+- Verify lossless join.
+- Verify dependency preservation using SQL queries.
 
-**Run:** Execute `experiment-07.sql` in MySQL 8.0+. The script creates its own database, inserts sample sales data, reconstructs the original rows through joins, and runs dependency-check queries.
+## Suggested files
+- `experiment-07.sql` – table creation, sample data, normalized relations, reconstruction joins and dependency checks.
+- `experiment-07-record.pdf` – practical record.
+- `output/` – genuine screenshots of relations and verification queries.
 
-**Note:** The functional dependencies and sample Sales attributes are explicitly documented in the SQL comments. 
+## Verification checklist
+- [ ] Functional dependencies are listed and explained.
+- [ ] Each normalization stage is documented.
+- [ ] Final decomposed relations are created.
+- [ ] Lossless reconstruction is tested using joins.
+- [ ] Dependency preservation is checked with SQL queries.
+
+## Notes
+State the functional dependencies and assumptions used for the Sales table in your practical record. The normalization result depends on those dependencies.
