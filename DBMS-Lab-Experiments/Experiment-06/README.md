@@ -1,15 +1,29 @@
-# Experiment 6 – Stored Procedure and Triggers
+# Experiment 6 – Stored Procedure, Validation Triggers and Audit Logging
 
-**Aim:** Create a validated employee-transfer procedure, enforce salary limits with triggers, and maintain a salary audit log.
+## Aim
+Create a stored procedure `transfer_employee(emp_id, new_dept_id)` with validation and error handling, and implement triggers for salary validation and audit logging.
 
-## Files
-- `experiment-06.sql` – audit table, BEFORE INSERT/UPDATE validation triggers, AFTER UPDATE audit trigger, stored procedure and tests.
-- Add your practical PDF/Word record and genuine output screenshots to this folder.
+## Required tasks
+- Create the `transfer_employee` stored procedure.
+- Validate that the employee and destination department exist.
+- Handle invalid transfer cases.
+- Use transaction control and error handling.
+- Implement salary-validation triggers.
+- Implement salary audit logging.
+- Test edge cases.
 
-## Run
-Run Experiments 3 and 5 first. Execute this file in MySQL 8.0+. The script includes commented negative tests; uncomment and run those one at a time because they intentionally return errors.
+## Suggested files
+- `experiment-06.sql` – audit table, triggers, procedure and test calls.
+- `experiment-06-record.pdf` – practical record.
+- `output/` – genuine screenshots of successful calls, audit rows and expected errors.
 
-## Corrections made for a consistent runnable setup
-- The supplied practical showed a salary UPDATE test but only defined a BEFORE INSERT validation trigger. This script includes both BEFORE INSERT and BEFORE UPDATE triggers.
-- The supplied audit example updated employee ID 31, but Experiment 3 creates employees 1–30. This script tests employee ID 6 instead.
-- Department names are kept consistent with Experiment 3 (IT, HR, Finance, Marketing, Operations).
+## Verification checklist
+- [ ] Procedure accepts employee ID and new department ID.
+- [ ] Invalid employee and department IDs are handled.
+- [ ] Same-department transfer is tested.
+- [ ] Salary validation is tested.
+- [ ] Salary changes are recorded in the audit table.
+- [ ] Successful transfer is verified with a query joining Employee and Department.
+
+## Run order
+The supplied practical uses the CompanyDB schema from Experiment 3. Run the prerequisite schema setup first.
