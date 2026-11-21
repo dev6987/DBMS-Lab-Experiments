@@ -1,10 +1,30 @@
 # Experiment 4 – Joins, Subqueries and Execution Plans
 
-**Aim:** Demonstrate INNER JOIN, LEFT JOIN, self-join, three-way join, correlated subquery, EXISTS, simulated INTERSECT/EXCEPT and EXPLAIN.
+## Aim
+Using the Employee schema, demonstrate joins, subqueries, set-operation simulations and execution-plan comparison.
 
-## Files
-- `experiment-04.sql` – all queries from the practical, using the Experiment 3 database.
-- Add your practical PDF/Word record and genuine output screenshots to this folder.
+## Required SQL concepts
+- `INNER JOIN`
+- `LEFT JOIN`
+- Self-join
+- Three-way join
+- Correlated subqueries
+- `EXISTS`
+- Simulated `INTERSECT`
+- Simulated `EXCEPT`
+- `EXPLAIN` for comparing execution plans
 
-## Run
-Run Experiment 3 first, then execute this file in MySQL 8.0+.
+## Suggested files
+- `experiment-04.sql` – all required queries and `EXPLAIN` statements.
+- `experiment-04-record.pdf` – practical record.
+- `output/` – genuine query and execution-plan screenshots.
+
+## Verification checklist
+- [ ] Each listed join type is demonstrated.
+- [ ] Correlated subquery and `EXISTS` queries are executed.
+- [ ] Simulated `INTERSECT` and `EXCEPT` queries are included.
+- [ ] Execution plans are inspected using `EXPLAIN`.
+- [ ] Observations are based on the actual execution plans.
+
+## Run order
+The supplied practical uses the Employee–Department–Project schema from Experiment 3. Run Experiment 3 first.
