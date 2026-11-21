@@ -1,13 +1,26 @@
-# Experiment 5 – Views and Recursive CTE
+# Experiment 5 – SQL Views and Recursive CTE
 
-**Aim:** Create a department salary summary view and employee hierarchy view, examine view updatability, and use a recursive CTE to display reporting chains.
+## Aim
+Create views for department salary summaries and employee hierarchy, test view updatability, and implement a recursive CTE to display reporting chains.
 
-## Important setup
-This script adds `manager_id` to the `Employee` table created in Experiment 3, adds a self-referencing foreign key, and assigns reporting relationships. Run the `ALTER TABLE` statements only once.
+## Required tasks
+1. Create a department salary summary view.
+2. Create an employee hierarchy view.
+3. Test the updatability of views.
+4. Implement a recursive CTE for reporting chains.
+5. Verify the results using `SELECT` queries.
 
-## Files
-- `experiment-05.sql` – manager hierarchy setup, views, updatability test notes and recursive CTE.
-- Add your practical PDF/Word record and genuine output screenshots to this folder.
+## Suggested files
+- `experiment-05.sql` – view definitions, required schema changes, tests and recursive CTE.
+- `experiment-05-record.pdf` – practical record.
+- `output/` – genuine screenshots of view contents and recursive-query results.
 
-## Run
-Run Experiment 3 first. Then run this file once in MySQL 8.0+.
+## Verification checklist
+- [ ] Department salary summary view is created.
+- [ ] Employee hierarchy view is created.
+- [ ] View updatability is tested and observations recorded.
+- [ ] Recursive CTE displays reporting chains.
+- [ ] Results are verified with `SELECT`.
+
+## Run order
+The supplied practical uses the `CompanyDB` Employee–Department–Project schema. Run Experiment 3 first and apply any required hierarchy setup before running this experiment.
